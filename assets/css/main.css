@@ -1317,7 +1317,7 @@ input[type="button"]:focus {
 .work__visual {
     position: relative;
     width: 52.5%;
-    box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21);
+    /* box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); */
     z-index: 2
 }
 
@@ -1553,7 +1553,7 @@ input[type="button"]:focus {
 .contact__visual {
     position: relative;
     width: 47.5%;
-    box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21);
+    /* box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); */
     z-index: 2
 }
 
