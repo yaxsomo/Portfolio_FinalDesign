@@ -104,25 +104,25 @@ $(document).ready(function() {
 	  });
 	  	
 	  /* App Design */
-	  var $appDesignTrigger = $('.app-design'),
-	  		$appDesignVisual = $('.app-design__visual');
+	  var $skillsTrigger = $('.skills'),
+	  		$skillsVisual = $('.skills_visual');
 	  	
 	  var appDesignScene = new ScrollMagic.Scene({
-		  triggerElement: $appDesignTrigger,
+		  triggerElement: $skillsTrigger,
 		  reverse: false
 	  })
-	  	.setTween(TweenLite.from($appDesignVisual, 0.8, {x: 100, opacity: 0, ease: Power1.easeOut}))
+	  	.setTween(TweenLite.from($skillsVisual, 0.8, {x: 100, opacity: 0, ease: Power1.easeOut}))
 	  	.addTo(controller);
 	  	
 	  /* Web Design */
-	  var $webDesignTrigger = $('.web-design'),
-	  		$webDesignVisual = $('.web-design__visual');
+	  var $cetificationsTrigger = $('.cetifications'),
+	  		cetifications_visual = $('.cetifications_visual');
 	  	
 	  var webDesignScene = new ScrollMagic.Scene({
-		  triggerElement: $webDesignTrigger,
+		  triggerElement: $cetificationsTrigger,
 		  reverse: false
 	  })
-	  	.setTween(TweenLite.from($webDesignVisual, 0.8, {x: -100, opacity: 0, ease: Power1.easeOut}))
+	  	.setTween(TweenLite.from(cetifications_visual, 0.8, {x: -100, opacity: 0, ease: Power1.easeOut}))
 	  	.addTo(controller);
 	  	
 	  /* Work */

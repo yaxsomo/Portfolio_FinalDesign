@@ -1082,60 +1082,60 @@ input[type="button"]:focus {
     }
 }
 
-.app-design {
+.skills {
     position: relative;
     width: 100%;
     padding: 180px 0;
     overflow: hidden
 }
 
-.app-design__visual {
+.skills_visual {
     position: absolute;
     top: 15%;
     left: 45%;
     width: 930px;
     height: 382px;
     margin: 0;
-    background-image: url("../img/app-design-visual.png");
+    background-image: url("../img/skills.png");
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat
 }
 
 @media (max-width: 991px) {
-    .app-design__content h2 {
+    .skills__content h2 {
         font-size: 48px
     }
 
-    .app-design__visual {
+    .skills_visual {
         width: 922px;
         height: 586px
     }
 }
 
 @media (max-width: 767px) {
-    .app-design {
+    .skills {
         height: 400px;
         padding: 60px 0
     }
 
-    .app-design__content {
+    .skills__content {
         text-align: center
     }
 
-    .app-design__content h2 {
+    .skills__content h2 {
         font-size: 32px
     }
 
-    .app-design__content h2 br {
+    .skills__content h2 br {
         display: none
     }
 
-    .app-design__content p {
+    .skills__content p {
         margin: 0 auto 20px auto
     }
 
-    .app-design__visual {
+    .skills_visual {
         top: auto;
         left: 50%;
         bottom: -175px;
@@ -1147,14 +1147,14 @@ input[type="button"]:focus {
 }
 
 @media (max-width: 480px) {
-    .app-design__visual {
+    .skills_visual {
         bottom: -100px;
         width: 576px;
         height: 366px
     }
 }
 
-.web-design {
+.cetifications {
     position: relative;
     width: 100%;
     padding: 200px 0;
@@ -1162,7 +1162,7 @@ input[type="button"]:focus {
     overflow: hidden
 }
 
-.web-design__wrapper {
+.cetifications__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1173,7 +1173,7 @@ input[type="button"]:focus {
     justify-content: flex-end
 }
 
-.web-design__visual {
+.cetifications_visual {
     position: absolute;
     top: 50%;
     right: 52%;
@@ -1182,18 +1182,18 @@ input[type="button"]:focus {
     width: 828px;
     height: 581px;
     margin: 0;
-    background-image: url("../img/web-design-visual.png");
+    background-image: url("../img/certifications.png");
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat
 }
 
 @media (max-width: 991px) {
-    .web-design__content h2 {
+    .cetifications__content h2 {
         font-size: 48px
     }
 
-    .web-design__visual {
+    .cetifications_visual {
         right: 45%;
         width: 741px;
         height: 520px
@@ -1201,31 +1201,31 @@ input[type="button"]:focus {
 }
 
 @media (max-width: 767px) {
-    .web-design {
+    .cetifications {
         height: 525px;
         padding: 60px 0
     }
 
-    .web-design__wrapper {
+    .cetifications__wrapper {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center
     }
 
-    .web-design__content {
+    .cetifications__content {
         text-align: center
     }
 
-    .web-design__content h2 {
+    .cetifications__content h2 {
         font-size: 32px
     }
 
-    .web-design__content h2 br {
+    .cetifications__content h2 br {
         display: none
     }
 
-    .web-design__visual {
+    .cetifications_visual {
         top: auto;
         right: auto;
         left: 50%;
@@ -1238,11 +1238,11 @@ input[type="button"]:focus {
 }
 
 @media (max-width: 480px) {
-    .web-design {
+    .cetifications {
         height: 425px
     }
 
-    .web-design__visual {
+    .cetifications_visual {
         width: 392px;
         height: 275px
     }
@@ -1554,12 +1554,14 @@ input[type="button"]:focus {
     position: relative;
     width: 47.5%;
     /* box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); */
-    z-index: 2
+    z-index: 2;
+    right: 7.5%;
 }
 
 .contact__visual img {
     display: block;
-    width: 100%
+    width: 100%;
+   
 }
 
 .contact__form {
