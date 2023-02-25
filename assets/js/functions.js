@@ -114,6 +114,8 @@ $(document).ready(function() {
 	  	.setTween(TweenLite.from($skillsVisual, 0.8, {x: 100, opacity: 0, ease: Power1.easeOut}))
 	  	.addTo(controller);
 	  	
+	
+		
 	  /* Web Design */
 	  var $cetificationsTrigger = $('.cetifications'),
 	  		cetifications_visual = $('.cetifications_visual');
