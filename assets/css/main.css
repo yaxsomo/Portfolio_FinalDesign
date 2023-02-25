@@ -682,10 +682,19 @@ input[type="button"]:focus {
     display: none
 }
 
+
+.go-home_404{
+    position: relative;
+    top: 25%;
+    right: 33%;
+}
+
 @media (max-width: 991px) {
     .navigation__cta {
         display: none
+
     }
+
 
     .navigation__container {
         position: fixed;
