@@ -964,7 +964,7 @@ input[type="button"]:focus {
     width: 100%;
     height: 625px;
     background-color: #fafafa;
-    text-align: center;
+    align-items:center;
 }
 
 .about__wrapper {
@@ -1003,8 +1003,10 @@ input[type="button"]:focus {
     position: relative;
     z-index: 1;
     top: 40%;
+    left: 30%;
+    width: 40%;
     text-align: left;
-    /* justify-content: left; */
+
 }
 
 .about__content-signature {
@@ -1109,7 +1111,7 @@ input[type="button"]:focus {
     width: 930px;
     height: 382px;
     margin: 0;
-    background-image: url("../img/skills.png");
+    /* background-image: url("../img/skills.png"); */
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat
@@ -1344,7 +1346,7 @@ input[type="button"]:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100px;
+    width: 200px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
