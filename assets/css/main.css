@@ -623,10 +623,10 @@ input[type="button"]:focus {
 }
 
 .navigation {
-    /* background: white; */
+    background: white;
     /* backdrop-filter : blur(5px);
     -webkit-backdrop-filter : blur(5px); */
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100px;
     z-index: 10
@@ -1178,6 +1178,7 @@ input[type="button"]:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    left: 10%;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -1187,7 +1188,7 @@ input[type="button"]:focus {
 .cetifications_visual {
     position: absolute;
     top: 50%;
-    right: 52%;
+    right: 40%;
     -webkit-transform: translateY(-45%);
     transform: translateY(-45%);
     width: 828px;
