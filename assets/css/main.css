@@ -1099,18 +1099,23 @@ input[type="button"]:focus {
     padding: 180px 0;
     overflow: hidden
 }
+.skills__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 .skills_visual {
-    position: absolute;
-    top: 15%;
-    left: 45%;
-    width: 930px;
-    height: 382px;
-    margin: 0;
-    background-image: url("../img/skills.png");
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+}
+.skills_visual img{
+    width: 100%;
+}
+.for_mobile{
+    display: none;
 }
 
 @media (max-width: 991px) {
@@ -1118,15 +1123,10 @@ input[type="button"]:focus {
         font-size: 48px
     }
 
-    .skills_visual {
-        width: 922px;
-        height: 586px
-    }
 }
 
 @media (max-width: 767px) {
     .skills {
-        height: 400px;
         padding: 60px 0
     }
 
@@ -1145,30 +1145,33 @@ input[type="button"]:focus {
     .skills__content p {
         margin: 0 auto 20px auto
     }
-
-    .skills_visual {
-        top: auto;
-        left: 50%;
-        bottom: -175px;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 679px;
-        height: 439px
+    .skills__wrapper{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skills_visual img{
+        width: 90%;
+    }
+    .for_desktop{
+        display: none;
+    }
+    .for_mobile{
+        display: block;
+    }
+    .skill_images_inner{
+        text-align: center;
+    }
+    .skill_images_inner img{
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    .skills_visual {
-        bottom: -100px;
-        width: 576px;
-        height: 366px
-    }
-}
+
 
 .cetifications {
     position: relative;
     width: 100%;
-    padding: 200px 0;
+    padding: 120px 0;
     background-color: #fafafa;
     overflow: hidden
 }
@@ -1178,51 +1181,44 @@ input[type="button"]:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    left: 10%;
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .cetifications_visual {
-    position: absolute;
-    top: 50%;
-    right: 40%;
-    -webkit-transform: translateY(-45%);
-    transform: translateY(-45%);
-    width: 828px;
-    height: 581px;
-    margin: 0;
-    background-image: url("../img/certifications.png");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+}
+.cetifications_visual img{
+    width: 100%;
 }
 
 @media (max-width: 991px) {
     .cetifications__content h2 {
         font-size: 48px
     }
-
-    .cetifications_visual {
-        right: 45%;
-        width: 741px;
-        height: 520px
-    }
 }
 
 @media (max-width: 767px) {
-    .cetifications {
-        height: 525px;
-        padding: 60px 0
-    }
+
 
     .cetifications__wrapper {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
-        justify-content: center
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    .blurb__copy--tight{
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 
     .cetifications__content {
@@ -1236,29 +1232,13 @@ input[type="button"]:focus {
     .cetifications__content h2 br {
         display: none
     }
-
-    .cetifications_visual {
-        top: auto;
-        right: auto;
-        left: 50%;
-        bottom: 0;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 523px;
-        height: 376px
+    .cetifications_visual img{
+        width: 90%;
     }
+
 }
 
-@media (max-width: 480px) {
-    .cetifications {
-        height: 425px
-    }
 
-    .cetifications_visual {
-        width: 392px;
-        height: 275px
-    }
-}
 
 .work {
     position: relative;
@@ -1565,9 +1545,13 @@ input[type="button"]:focus {
 .contact__visual {
     position: relative;
     width: 47.5%;
-    /* box-shadow: 5px 8px 30px 1px rgba(0, 0, 0, 0.21); */
     z-index: 2;
-    right: 7.5%;
+}
+
+@media screen and (min-width: 992px) {
+    .contact__visual {
+        right: 7.5%;
+    }
 }
 
 .contact__visual img {
