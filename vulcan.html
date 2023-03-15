@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Argo Project - Yassine Dehhani</title>
+  <title>VulCAN Project - Yassine Dehhani</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="ARGO Project details">
+  <meta name="description" content="VulCAN Project details">
   <meta name="keywords" content="Yassine Dehhani, Yassine, Dehhani, Robotics, Embedded">
   <meta name="author" content="Yassine DEHHANI">
-  <link rel="stylesheet" href="assets/css/argo.css">
+  <link rel="stylesheet" href="assets/css/vulcan.css">
 </head>
 <body>
 
@@ -37,11 +37,11 @@
 		<div class="introduction wrapper--large">
 			<h1 class="introduction__content">
 				<!-- <span class="introduction__content-el introduction__content-el--name">Yassine DEHHANI</span> -->
-				<span class="introduction__content-el introduction__content-el--description">ARGO</span>
-				<span class="introduction__content-el introduction__content-el--job">The Autonomous Drone</span>
+				<span class="introduction__content-el introduction__content-el--description">VulCAN</span>
+				<span class="introduction__content-el introduction__content-el--job">The CAN Bus powered arm</span>
 			</h1>
 			<div class="argo_visual">
-				<img src="./assets/img/argo_big.png" alt="">
+				<img src="./assets/img/vulcan_big.png" alt="">
 			</div>
 			<svg class="introduction__arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 130 65" xml:space="preserve" enable-background="new 0 0 130 65"><g transform="translate(0.000000,65.000000) scale(0.100000,-0.100000)"><path d="M22.2 634c-50-35-40-47 293-349 174-157 323-285 333-285 24 0 635 552 647 585 8 23 6 30-14 46 -13 10-31 19-40 19s-57-37-107-83c-50-45-179-162-287-260l-197-179 -147 134c-319 289-433 388-446 388C50.2 650 34.2 643 22.2 634z"/></g></svg>
 		</div>
@@ -54,8 +54,8 @@
 				<div class="about__content">
 					<!-- <div class="about__content-blurb blurb blurb--framed"> -->
 						<!-- “The most difficult thing is the decision to act, the rest is merely tenacity.” -->
-						<h2 class="blurb__heading__about">Argo is an autonomous drone that can fly both indoors and outdoors<br>and be used for a variety of applications, such as aerial photography, mapping, surveillance, and more.</h2>
-						<p class="blurb__copy no-margin">We set out to design and build a cutting-edge machine.</p>
+						<h2 class="blurb__heading__about">VulCAN is a cutting-edge robotic arm controlled via a CANBus network, ensuring efficient<br>and reliable communication between the various components.</h2>
+						<p class="blurb__copy no-margin">An original way for the components to communicate in near real time.</p>
 					<!-- </div> -->
 					<!-- <p class="about__content-signature">Yassine DEHHANI</p> -->
 				</div>
@@ -64,92 +64,56 @@
 		<!-- END SECTION: About -->
 		<!-- SECTION: Main Components -->
 		<section id="work" class="work">
-			<h2 class="work__heading title">Main Components</h2>
+			<h2 class="work__heading title">The Proprietary PCB</h2>
 			<div class="work__wrapper wrapper--large">
 				<ul class="work__list">
 					<li class="work__list-el work__list-el--is-active">
 						<div class="work__content">
 							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">NVidia Jetson<br>Nano</h3>
-								<p class="blurb__copy">A powerful computer designed for embedded applications, such as autonomous vehicles and drones. It features a quad-core ARM Cortex-A57 CPU, 128-core NVIDIA Maxwell GPU, and 4GB of LPDDR4 memory.</p>
+								<h3 class="blurb__heading">Schematics of VulCAN CS</h3>
+								<p class="blurb__copy">This document contains the detailed electrical schematics of the VulCAN control system. It provides a visual representation of the wiring, components, and connections within the system, allowing for a comprehensive understanding of its design and functionality.</p>
 							</div>
 						</div>
 						<div class="work__visual">
-							<img src="assets/img/argo/jetson_nano.png" alt="Argo project image">
+							<img src="assets/img/vulcan/VulCAN_Schematics.png" alt="Argo project image">
 						</div>
 					</li>
 					<li class="work__list-el">
 						<div class="work__content">
 							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">PixHawk<br>Flight Controller</h3>
-								<p class="blurb__copy">An open-source autopilot system designed for drones, helicopters, and other unmanned vehicles. It features a powerful ARM Cortex-M4 CPU, multiple sensors, and a range of I/O ports.</p>
+								<h3 class="blurb__heading">From the schema to 2D design</h3>
+								<p class="blurb__copy"> This stage of the project involves translating the electrical schematics of the VulCAN control system into a 2D design. The 2D design will serve as a blueprint for the physical construction of the control system, ensuring that all components are correctly positioned and wired.</p>
 							</div>
 						</div>
 						<div class="work__visual">
-							<img src="assets/img/argo/pixhawk.png" alt="VulCAN project image">
+							<img src="assets/img/vulcan/VulCAN_PCB_Design.png" alt="VulCAN project image">
 						</div>
 					</li>
 					<li class="work__list-el">
 						<div class="work__content">
 							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">RPLiDAR<br>A2 M12</h3>
-								<p class="blurb__copy">A 360-degree laser scanner is used for mapping and navigation. It can scan up to 12 meters in range and 10,000 times per second.</p>
+								<h3 class="blurb__heading">The prototype</h3>
+								<p class="blurb__copy">The prototype is a physical representation of the VulCAN control system. It is a working model that allows for testing and refinement of the system's design and functionality. The prototype is a crucial step in the development process, as it enables us to identify and address any issues or limitations in the system's design before final production.</p>
 							</div>
 						</div>
 						<div class="work__visual">
-							<img src="assets/img/argo/rplidar.png" alt="Coming soon image">
+							<img src="assets/img/vulcan/VulCAN_PCB_Prototype.png" alt="Coming soon image">
 						</div>
 					</li>
 					<li class="work__list-el">
 						<div class="work__content">
 							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">E-con Systems<br>4K Camera</h3>
-								<p class="blurb__copy">A high resolution camera used to capture images and video of the drone’s surroundings.</p>
+								<h3 class="blurb__heading">The BRAIN of<br>our system</h3>
+								<p class="blurb__copy"> The "brain" of the VulCAN control system refers to the central microcontroller that will control and coordinate all of the system's functions. While the specific microcontroller has not yet been selected, it will be a critical component of the system's design, responsible for processing and responding to input from various sensors and other components.</p>
 							</div>
 						</div>
 						<div class="work__visual">
-							<img src="assets/img/argo/4kcamera.png" alt="Coming soon image">
-						</div>
-					</li>
-					<li class="work__list-el">
-						<div class="work__content">
-							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">4 in 1<br>ESC</h3>
-								<p class="blurb__copy">A powerful and efficient electronic speed controller that combines four ESCs into one compact unit. </p>
-							</div>
-						</div>
-						<div class="work__visual">
-							<img src="assets/img/argo/4in1esc.png" alt="Coming soon image">
-						</div>
-					</li>
-					<li class="work__list-el">
-						<div class="work__content">
-							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">Battery</h3>
-								<p class="blurb__copy">A LiPO Battery (7000mAh), which provides the necessary energy to run the drone's components and motors.</p>
-							</div>
-						</div>
-						<div class="work__visual">
-							<img src="assets/img/argo/battery.png" alt="Coming soon image">
-						</div>
-					</li>
-					<li class="work__list-el">
-						<div class="work__content">
-							<div class="work__content-blurb blurb blurb--framed">
-								<h3 class="blurb__heading">Chassis</h3>
-								<p class="blurb__copy">A sturdy and lightweight carbon fiber frame designed for multirotor drones. It features a spacious design that allows for easy installation and maintenance of the drone's components.</p>
-							</div>
-						</div>
-						<div class="work__visual">
-							<img src="assets/img/argo/chassis.png" alt="Coming soon image">
+							<img src="assets/img/vulcan/InProgress.png" alt="Coming soon image">
 						</div>
 					</li>
 				</ul>
 				<ul class="work__navigation">
 					<li class="work__navigation-el work__navigation-el--is-active"></li>
-					<li class="work__navigation-el"></li>
-					<li class="work__navigation-el"></li>
-					<li class="work__navigation-el"></li>
 					<li class="work__navigation-el"></li>
 					<li class="work__navigation-el"></li>
 					<li class="work__navigation-el"></li>
@@ -165,9 +129,9 @@
 					<!-- Check it out project transform-link -->
 				</div>
 
-				<p class="skills_visual">●&emsp;Design and build a cutting-edge technology drone <br><br>
-					●&emsp;Demonstrate the power of Data <br><br>
-					●&emsp;Develop hardware and software skills <br><br> </p>
+				<p class="skills_visual">●&emsp;Develop a reliable and efficient robotic arm control system <br><br>
+					●&emsp;Build a functional and durable prototype of the robotic arm <br><br>
+					●&emsp;Test and optimize the performance of the robotic arm <br><br> </p>
 				
 			</div>
 			
@@ -182,7 +146,7 @@
 				</div>
 			</div>
 			<div class="cetifications_visual">
-				<img src="./assets/img/argo/roadmap.png" alt="">
+				<img src="./assets/img/vulcan/roadmap.png" alt="">
 			</div>
 		</section>
 		<!-- END SECTION: Roadmap -->
@@ -198,7 +162,7 @@
 					<div class="blog__post-excerpt">
 						<h3>Notion Page</h3>
 						<p>You'll be able to see all the detailed aspects of the engineering process behind this project.</p>
-						<a class="transform-link" href="https://brazen-mascara-567.notion.site/Ing-nierie-quipe-ARGO-d0e62c6d1d4c40249d0bf8c3f6099047" target="_blank">Notion page</a>
+						<a class="transform-link" href="https://incongruous-notebook-e1d.notion.site/VulCAN-db9826bb9481426b99661145c1439a80" target="_blank">Notion page</a>
 					</div>
 				</article>
 				<article class="blog__post">
