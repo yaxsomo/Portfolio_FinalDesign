@@ -522,9 +522,16 @@ input[type="button"]:focus {
     font-weight: 800;
 }
 
+.video_presentation{
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+}
+
 .blurb__copy {
     font-weight: 700;
-    padding-left: 5%;
+    /* padding-left: 5%; */
+    text-align: center;
 }
 
 .blurb__copy--tight {
@@ -1032,7 +1039,7 @@ input[type="button"]:focus {
 .about__content {
     z-index: 1;
     text-align: left;
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
 
 }
